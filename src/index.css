@@ -16,22 +16,37 @@ code {
 
 .main-container {
   width: 40%;
-  height: 500px;
+  height: 610px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   margin-left: 30%;
   margin-top: 55px;
+  box-shadow: inset 0 20px 20px -20px gray
+}
+
+.bar {
+  width: 80%;
+  height: 18px;
+  border: 1.8px solid #DCDCDC;
+  border-bottom: none;
+  background-color: #FAFAFA;
+}
+
+.orange-bar {
+  width: 80%;
+  background-color: #F15E33;
+  height: 18px;
+  margin-left: -0.5px
 }
 
 .gray-header {
   background-color: #424242;
   color: white;
   height: 70px;
-  width: 80%;
+  width: 81%;
   margin-top: 30px;
-  margin-bottom: 25px;
   border-radius: 4px;
   font-size: 150%;
   display: flex;
@@ -39,9 +54,15 @@ code {
   align-items: center;
 }
 
-/* .header-text {
-  margin-bottom: 20px;
-} */
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 14px solid #424242;
+  margin-bottom: 5px;
+  margin-left: 58%;
+}
 
 .bold {
   font-weight: bold;
@@ -49,8 +70,9 @@ code {
 
 .main-content {
   width: 80%;
-  border: 1px solid gray;
-  height: 50%;
+  border: 1.8px solid #DCDCDC;
+  height: 55%;
+  box-shadow: 0 2px #F4F4F4;
 }
 
 .orange-text {
@@ -59,9 +81,88 @@ code {
 }
 
 .light-gray {
-  color: #8E8E8E
+  color: #8E8E8E;
+  font-size: 135%;
 }
 
 .header-text {
   font-size: 135%;
+}
+
+.header-text .light-gray {
+  font-size: 100%;
+}
+
+p.header-text,
+p.light-gray,
+p.why {
+  text-align: left;
+  margin-left: 8%;
+}
+
+.main-text {
+  line-height: 155%;
+  margin-right: 10%;  
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 13px -8px 13px;
+}
+
+.row.footer {
+  margin-top: 27px;
+  width: 90%;
+  font-size: 80%
+}
+
+.box {
+  width: 37%;
+  height: 70px; 
+  border: 1.8px solid #DCDCDC;
+  border-radius: 6px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box p {
+  font-size: 170%;
+  color: #8E8E8E;
+}
+
+.box p span {
+  color: black;
+}
+
+.box.give-now {
+  background-color: #00BE1C;
+  border: 1.8px solid #00BE1C;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box.save-tell {
+  justify-content: center;
+  height: 60px;
+  background-color: #FAFAFA;
+  box-shadow: 0 1.5px #DCDCDC;
+  cursor: pointer;  
+}
+
+.box.save-tell p {
+  color: #777777;
+  font-weight: bold;
+}
+
+#white {
+  color: white;
+}
+
+.why {
+  color: #18A3D7;
+  font-size: 140%;
+  font-style: italic;
 }
