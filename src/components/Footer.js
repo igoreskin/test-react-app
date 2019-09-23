@@ -7,7 +7,6 @@ const Footer = () => {
     <div className="row footer">
       <Save />
       <Tell />
-      
     </div>
   )
 }
